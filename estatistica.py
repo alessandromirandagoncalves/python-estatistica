@@ -71,15 +71,11 @@ def variancia_amostral(lista):
 def variancia_populacional(lista):
     m = media(lista)
     var_populacional = 0
-    #maior = 0
     qtd = qtd_elementos(lista)
     for i in range(qtd):
         var_elemento = variancia(lista[i], m)
-        #var_amostral += var_elemento
         var_populacional += var_elemento
-        # if lista.count(lista[i]) >= maior:  ## Conta a ocorrência deste elemento na lista
-        #     maior = lista.count(lista[i])  ## se for o maior, guarda a qtd. elementos
-        #     moda = lista[i]  ## Se for a maior quantidade até agora, considera o número como "moda"
+
     var_populacional = var_populacional / (qtd)
     return var_populacional
 
