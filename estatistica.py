@@ -79,5 +79,3 @@ def variancia_populacional(lista):
     var_populacional = var_populacional / (qtd)
     return var_populacional
 
-lista = entrar_dados()
-imprimir_resultados(lista)
